@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.trackfuel.domain.engine.EnergyEngineTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-08-01T12:51:12.445Z" hostname="Anils-Mac-mini.local" time="0.006">
+  <properties/>
+  <testcase name="testGoldenVector1_Male30y_75kg_180cm_Sedentary" classname="com.trackfuel.domain.engine.EnergyEngineTest" time="0.005"/>
+  <testcase name="testGoldenVector3_Male40y_90kg_175cm_Light" classname="com.trackfuel.domain.engine.EnergyEngineTest" time="0.0"/>
+  <testcase name="testProperty_NetCaloriesIdentity" classname="com.trackfuel.domain.engine.EnergyEngineTest" time="0.0"/>
+  <testcase name="testGoldenVector2_Female30y_65kg_165cm_Moderate" classname="com.trackfuel.domain.engine.EnergyEngineTest" time="0.0"/>
+  <testcase name="testMetFixture_75kg_BriskWalk_45min" classname="com.trackfuel.domain.engine.EnergyEngineTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

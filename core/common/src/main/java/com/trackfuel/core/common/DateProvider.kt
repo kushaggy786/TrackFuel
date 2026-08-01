@@ -32,8 +32,8 @@ class DefaultDateProvider(
     private val timeZoneSupplier: () -> ZoneId = { ZoneId.systemDefault() }
 ) : DateProvider {
     override fun zoneId(): ZoneId = timeZoneSupplier()
-    override fun today(): DayKey = DayKey.from(LocalDate.now(clock.now(), zoneId()))
-    override fun dayKeyFor(instant: Instant): DayKey = DayKey.from(LocalDate.now(instant, zoneId()))
+    override fun today(): DayKey = DayKey.from(LocalDate.ofInstant(clock.now(), zoneId()))
+    override fun dayKeyFor(instant: Instant): DayKey = DayKey.from(LocalDate.ofInstant(instant, zoneId()))
 }
 
 fun calculateAge(birthDate: LocalDate, onDate: LocalDate): Int =
