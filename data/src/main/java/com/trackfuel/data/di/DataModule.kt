@@ -6,6 +6,7 @@ import com.trackfuel.core.common.Clock
 import com.trackfuel.core.common.DateProvider
 import com.trackfuel.core.common.DefaultDateProvider
 import com.trackfuel.core.common.SystemClock
+import com.trackfuel.data.local.datastore.SettingsDataSource
 import com.trackfuel.data.local.room.TrackFuelDatabase
 import com.trackfuel.data.local.room.dao.*
 import com.trackfuel.data.repository.*
@@ -28,6 +29,11 @@ object DataModule {
     @Provides
     @Singleton
     fun provideDateProvider(clock: Clock): DateProvider = DefaultDateProvider(clock)
+
+    @Provides
+    @Singleton
+    fun provideSettingsDataSource(@ApplicationContext context: Context): SettingsDataSource =
+        SettingsDataSource(context)
 
     @Provides
     @Singleton
